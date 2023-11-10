@@ -59,8 +59,8 @@
 #include "image_lut.h"
 #include "arm_math.h"
 
-//#define USE_KITPROG3_OUTPUT
-#define USE_DISPLAY_OUTPUT
+#define USE_KITPROG3_OUTPUT
+//#define USE_DISPLAY_OUTPUT
 
 #ifdef USE_DISPLAY_OUTPUT
 /*Display Function prototypes*/
