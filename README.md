@@ -4,15 +4,15 @@ This is the OMRON D6T32L01A sensor demonstration in ModusToolbox™ IDE using th
 
  <img src="images/omron_demo.jpg" style="zoom:120%;" />
 
+## **NOTICE**
+
+**Infineon has discontinued the PSOC™ 64 Secured MCU product line. As a result, the CYB06447BZI-BLD53 MCU used in the RDK3 is not recommended for new designs. The Infineon CY8C6347BZI-BLD53 MCU may be considered a suitable alternative.**
+
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.x** [built with **v3.1**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.1**]
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.2**: 
-
-1. The [Python](https://www.python.org/) has to be installed manually on Windows OS.
-2. Make sure the Python installation is added to the path variable. 
-3. Use this command to install the [cysecuretools](https://pypi.org/project/cysecuretools/) package:
+- The [Python](https://www.python.org/) has to be installed manually on Windows OS. Make sure the Python installation is added to the path variable. Use this command to install the [cysecuretools](https://pypi.org/project/cysecuretools/) package:
 
 ```
 pip install cysecuretools
@@ -31,6 +31,8 @@ The “[Secure Policy Configurator](https://www.infineon.com/dgdl/Infineon-Modus
 The CYB06447BZI-BLD53 MCU must be powered from a 2.5V power source to be able to complete the provisioning. The RDK3 has an SMPS [Switching Mode Power Supply] which can be easily adjusted to provide 3.3V or 2.5V to the MCU by switching the slide-switch “SW1” on the bottom side of the board. 
 
 <img src="images/voltage_switch.jpg" style="zoom:50%;" />
+
+The default keys and policies also might be downloaded from here: [RDK3 RUTRONIK DEMO KEYS](https://github.com/RutronikSystemSolutions/RDK3_Documents/tree/main/RDK3%20RUTRONIK%20DEMO%20Keys)
 
 ## Using the code example
 
@@ -85,7 +87,7 @@ Please note that the averaging (0 to 10) and IIR filter (0 to 15) of the D6T32L0
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with a the KitProg3 or MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 or MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
 
 <img src="images/debug_start.png" style="zoom:100%;" />
 
